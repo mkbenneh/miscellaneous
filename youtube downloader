@@ -1,0 +1,8 @@
+
+#pip install pytube
+
+from pytube import YouTube
+yt = YouTube('https://www.youtube.com/watch?v=Qgevy75co8c&t=177s')
+yt.streams.get_highest_resolution().download()
+print("downloaded", yt)
+
